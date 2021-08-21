@@ -4,9 +4,15 @@ Layer0
 {
 	shader "simple.vfx"
 
+	//---- PBR ----
+	F_AMBIENT_OCCLUSION_TEXTURE 1
+
+	//---- Ambient Occlusion ----
+	TextureAmbientOcclusion "materials/basetexturefiles/grass_a/grass_a_ao.jpg"
+
 	//---- Color ----
 	g_flModelTintAmount "1.000"
-	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	g_vColorTint "[0.662745 0.662745 0.662745 1.000000]"
 	TextureColor "materials/basetexturefiles/grass_a/grass_a_color.jpg"
 
 	//---- Fade ----
@@ -23,10 +29,10 @@ Layer0
 	g_flMetalness "0.000"
 
 	//---- Normal ----
-	TextureNormal "materials/default/default_normal.tga"
+	TextureNormal "materials/basetexturefiles/grass_a/grass_a_normal.jpg"
 
 	//---- Roughness ----
-	TextureRoughness "materials/default/default_rough.tga"
+	TextureRoughness "materials/basetexturefiles/grass_a/grass_a_rough.jpg"
 
 	//---- Texture Coordinates ----
 	g_nScaleTexCoordUByModelScaleAxis "0"
